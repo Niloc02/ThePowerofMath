@@ -7,63 +7,42 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2113.4">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
     span.Apple-tab-span {white-space:pre}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Test project - The power of math!&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Add some CSS to change client UI --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background-color: #232F3E;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>label, button {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: #FF9900;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-family: Arial, Helvetica, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-left: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">     </span>input {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: #232F3E;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-family: Arial, Helvetica, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-left: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// define the callAPI function that takes a first name and last name as parameters</p>
-<p class="p1"><span class="Apple-converted-space">        </span>var callAPI = (firstName,lastName)=&gt;{</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// instantiate a headers object</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var myHeaders = new Headers();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// add content type header to object</p>
-<p class="p1"><span class="Apple-converted-space">            </span>myHeaders.append("Content-Type", "application/json");</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// using built in JSON utility package turn object to string and store in a variable</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var raw = JSON.stringify({"firstName":firstName,"lastName":lastName});</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// create a JSON object with parameters for API call and store in a variable</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var requestOptions = {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>method: 'POST',</p>
-<p class="p1"><span class="Apple-converted-space">                </span>headers: myHeaders,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>body: raw,</p>
-<p class="p1"><span class="Apple-converted-space">                </span>redirect: 'follow'</p>
-<p class="p1"><span class="Apple-converted-space">            </span>};</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// make API call with parameters and use promises to get response</p>
-<p class="p1"><span class="Apple-converted-space">            </span>fetch("https://tdk2eu1l4j.execute-api.us-west-2.amazonaws.com/dev", requestOptions)</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.then(response =&gt; response.text())</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.then(result =&gt; alert(JSON.parse(result).body))</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.catch(error =&gt; console.log('error', error));</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;h1&gt;Hello, welcome to my website!<span class="Apple-converted-space">  </span>You're a little early, so check back later.&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;html&gt;</p>
+<p class="p2">&lt;head&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;title&gt;Test project - The power of math!&lt;/title&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;!-- Add some CSS to change client UI --&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p2"><span class="Apple-converted-space">        </span>background-color: #232F3E;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>label, button {</p>
+<p class="p2"><span class="Apple-converted-space">        </span>color: #FF9900;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>font-family: Arial, Helvetica, sans-serif;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>font-size: 20px;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>margin-left: 40px;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">     </span>input {</p>
+<p class="p2"><span class="Apple-converted-space">        </span>color: #232F3E;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>font-family: Arial, Helvetica, sans-serif;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>font-size: 20px;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>margin-left: 20px;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span></p>
+<p class="p2">&lt;/head&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;body&gt;</p>
+<p class="p2"><span class="Apple-tab-span">	</span>&lt;h1&gt;Hello, welcome to my website!<span class="Apple-converted-space">  </span>You're a little early, so check back later.&lt;/h1&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">      <span class="Apple-tab-span">	</span></span>&lt;/body&gt;</p>
+<p class="p2">&lt;/html&gt;</p>
 </body>
 </html>
